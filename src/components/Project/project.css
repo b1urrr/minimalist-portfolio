@@ -1,0 +1,92 @@
+.pf__project {
+    margin: 0 0rem;
+    display: flex;
+}
+
+.pf__project-card{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+}
+
+.pf__project-card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pf__project-card_body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    position: absolute;
+    background: rgba(34, 40, 49, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+.pf__project-card:hover .pf__project-card_body{
+    left: 0;
+}
+
+.pf__project-card_title{
+    font-family: var(--font-roboto);
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pf__project-card_sub-title{
+    font-family: var(--font-roboto);
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin: 10px 0 35px 0;
+}
+
+.pf__project-card_info{
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.pf__project-card_btn{
+    font-family: var(--font-roboto);
+    font-size: 13px;
+    color: var(--color-dark);
+    background: var(--color-light);
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.pf__project-card_btn:hover{
+    color: var(--color-light);
+    background: var(--color-blue);
+}

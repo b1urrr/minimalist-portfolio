@@ -1,0 +1,43 @@
+.pf__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+    max-width: 2000px;
+}
+
+.pf__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.pf__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.pf__navbar-links_container p,
+.pf__navbar-sign p, 
+.pf__navbar-menu_container p {
+    color: var(--color-dark);
+    font-family: var(--font-roboto);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.pf__navbar-links_container p:hover,
+.pf__navbar-sign p:hover, 
+.pf__navbar-menu_container p:hover {    
+    color: var(--color-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--color-blue);
+    text-decoration-style: dashed;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
